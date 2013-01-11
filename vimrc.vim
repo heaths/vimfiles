@@ -25,6 +25,10 @@ set tags=./tags,tags,~/vimfiles/tags
 set guifont=Consolas,Fixedsys:h10
 set guifontwide=Consolas:h10
 
+" load bundles
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+
 " enable file type detection and syntax
 syntax on
 filetype plugin indent on
