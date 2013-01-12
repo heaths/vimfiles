@@ -19,7 +19,7 @@ set tabstop=8
 set fileencodings=ucs-bom,utf-8
 set directory=$TEMP
 set nobackup
-set tags=./tags,tags,~/vimfiles/tags
+set tags=./tags,tags
 
 " font settings
 set guifont=Consolas,Fixedsys:h10
@@ -53,7 +53,7 @@ aug vimrc
 aug END
 
 " get cache for local profile
-let s:cache=split(&rtp.',~',',')[0].'/tmp'
+let s:cache=pathogen#split(&rtp)[0]."/tmp"
 
 " set cache for netrw
 let g:netrw_home=s:cache
