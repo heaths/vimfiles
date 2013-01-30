@@ -19,3 +19,6 @@
 [submodule "bundle/vim-ps1"]
 	path = bundle/vim-ps1
 	url = https://github.com/heaths/vim-ps1.git
+[submodule "bundle/vim-msbuild"]
+	path = bundle/vim-msbuild
+	url = https://github.com/heaths/vim-msbuild.git

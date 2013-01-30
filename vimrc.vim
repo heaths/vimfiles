@@ -47,9 +47,6 @@ aug vimrc
 
   " set linebreaks for plain text files
   au BufNewFile,BufRead *.txt,*.htm? set linebreak
-
-  " treat all msbuild projects as xml
-  au BufNewFile,BufRead *.*proj,*.targets set ft=xml
 aug END
 
 " get cache for local profile
