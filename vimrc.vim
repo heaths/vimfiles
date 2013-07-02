@@ -5,7 +5,7 @@
 set nocompatible
 set hlsearch
 set showcmd
-colors pablo
+colo custom
 
 " indent and tab options
 set autoindent
