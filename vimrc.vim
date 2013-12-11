@@ -5,6 +5,7 @@
 set nocompatible
 set hlsearch
 set showcmd
+set number
 colo custom
 
 " indent and tab options
