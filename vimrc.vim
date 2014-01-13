@@ -46,7 +46,7 @@ aug vimrc
   au StdinReadPost * set nomodified
 
   " set linebreaks for plain text files
-  au BufNewFile,BufRead *.txt,*.htm? set linebreak
+  au BufNewFile,BufRead *.txt,*.htm?,*.md set linebreak
 aug END
 
 " get cache for local profile
