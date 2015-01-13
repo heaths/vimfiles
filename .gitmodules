@@ -22,6 +22,6 @@
 [submodule "bundle/vim-msbuild"]
 	path = bundle/vim-msbuild
 	url = https://github.com/heaths/vim-msbuild.git
-[submodule ".\\bundle\\vim-typescript"]
-	path = .\\bundle\\vim-typescript
+[submodule "bundle/vim-typescript"]
+	path = bundle/vim-typescript
 	url = https://github.com/leafgarland/typescript-vim.git
