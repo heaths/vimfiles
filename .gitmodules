@@ -27,7 +27,7 @@
 	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "bundle/vim-omnisharp"]
 	path = bundle/vim-omnisharp
-	url = https://github.com/OmniSharp/omnisharp-vim.git
+	url = https://github.com/heaths/omnisharp-vim.git
 [submodule "bundle/vim-dispatch"]
 	path = bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
