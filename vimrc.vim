@@ -3,6 +3,7 @@
 
 " behavior options
 set nocompatible
+set noshowmatch
 set hlsearch
 set showcmd
 set number
@@ -49,6 +50,55 @@ aug vimrc
   " set linebreaks for plain text files
   au BufNewFile,BufRead *.txt,*.htm?,*.md set linebreak
 aug END
+
+" set up omnisharp
+set completeopt=longest,menuone,preview
+set splitbelow
+
+let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
+
+augroup omnisharp_commands
+  autocmd!
+
+  autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
+
+  " run builds asynchronously with vim-dispatch
+  autocmd FileType cs nnoremap <Leader>b :wa!<CR>:OmniSharpBuildAsync<CR>
+  autocmd BufEnter,TextChanged,InsertLeave *.cs SyntasticCheck
+
+  " automatically add new .cs files to nearest project on save
+  autocmd BufWritePost *.cs :call OmniSharp#AddToProject()
+
+  " show type information when the cursor stops moving
+  autocmd CursorHold *.cs :call OmniSharp#TypeLookupWithoutDocumentation()
+
+  " contextual commands
+  autocmd FileType cs nnoremap gd :OmniSharpGotoDefinition<CR>
+  autocmd FileType cs nnoremap <Leader>fi :OmniSharpFindImplementations<CR>
+  autocmd FileType cs nnoremap <Leader>ft :OmniSharpFindType<CR>
+  autocmd FileType cs nnoremap <Leader>fs :OmniSharpFindSymbol<CR>
+  autocmd FileType cs nnoremap <Leader>fu :OmniSharpFindUsages<CR>
+
+  " find members current buffer
+  autocmd FileType cs nnoremap <Leader>fm :OmniSharpFindMembers<CR>
+
+  " fix issues on line containing cursor
+  autocmd FileType cs nnoremap <Leader>x  :OmniSharpFixIssue<CR>  
+  autocmd FileType cs nnoremap <Leader>fx :OmniSharpFixUsings<CR>
+  autocmd FileType cs nnoremap <Leader>tt :OmniSharpTypeLookup<CR>
+  autocmd FileType cs nnoremap <Leader>dc :OmniSharpDocumentation<CR>
+
+  " contextual code actions using CtrlP
+  autocmd FileType cs nnoremap <Leader><Space> :OmniSharpGetCodeActions<CR>
+  autocmd FileType cs vnoremap <Leader><Space> :call OmniSharp#GetCodeActions('visual')<CR>
+
+  " format code
+  autocmd FileType cs nnoremap <Leader>cf :OmniSharpCodeFormat<CR>
+
+augroup END
+
+" reload the nearest solution (e.g. after switching branch)
+nnoremap <Leader>rl :OmniSharpReloadSolution<CR>
 
 " get cache for local profile
 let s:cache=pathogen#split(&rtp)[0]."/tmp"
