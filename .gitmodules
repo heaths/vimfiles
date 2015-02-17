@@ -25,3 +25,6 @@
 [submodule "bundle/vim-typescript"]
 	path = bundle/vim-typescript
 	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/vim-pipe"]
+	path = bundle/vim-pipe
+	url = https://github.com/krisajenkins/vim-pipe.git
