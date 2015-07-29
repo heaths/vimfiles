@@ -59,6 +59,12 @@ let g:netrw_home=s:cache
 " set default options for PS1 scripts
 let g:ps1_nofold_blocks=1
 
+" set options for vim-gnupg
+let g:GPGDefaultRecipients = ['heaths@outlook.com']
+let g:GPGPreferArmor = 1
+let g:GPGPreferSign = 1
+let g:GPGUsePipes = 1
+
 " command mappings
 nmap <C-E><C-D> :%s/></>\r</g<CR>=gg
 
