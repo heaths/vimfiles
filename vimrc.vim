@@ -23,8 +23,8 @@ set nobackup
 set tags=./tags,tags
 
 " font settings
-set guifont=Consolas,Fixedsys:h10
-set guifontwide=Consolas:h10
+set guifont=Hack:h8,Consolas:h9,Fixedsys:h10
+set guifontwide=Hack:h8,Consolas:h9
 
 " load bundles
 runtime bundle/vim-pathogen/autoload/pathogen.vim
