@@ -48,6 +48,9 @@ aug vimrc
 
   " set linebreaks for plain text files
   au BufNewFile,BufRead *.txt,*.htm?,*.md set linebreak
+
+  " do not expand tabs for Windows Installer archive files
+  au BufNewFile,BufRead *.idt set noexpandtab
 aug END
 
 " get cache for local profile
