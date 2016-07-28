@@ -1,6 +1,3 @@
-" Create a symlink to this file or add the following to $HOME\_vimrc:
-"   runtime vimrc.vim
-
 " behavior options
 set nocompatible
 set hlsearch
