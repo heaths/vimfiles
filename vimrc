@@ -15,7 +15,7 @@ set tabstop=8
 
 " file options
 set fileencodings=ucs-bom,utf-8
-set directory=$TEMP
+set directory=$TEMP,~/tmp,/tmp
 set nobackup
 set tags=./tags,tags
 
