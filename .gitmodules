@@ -28,3 +28,6 @@
 [submodule "bundle/vim-pipe"]
 	path = bundle/vim-pipe
 	url = https://github.com/krisajenkins/vim-pipe.git
+[submodule "bundle/vim-editorconfig"]
+	path = bundle/vim-editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git

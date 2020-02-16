@@ -59,6 +59,9 @@ let g:netrw_home=s:cache
 " set default options for PS1 scripts
 let g:ps1_nofold_blocks=1
 
+" set defaults for editorconfig
+let g:EditorConfig_exclude_patterns=['fugitive://.\*']
+
 " command mappings
 nmap <C-E><C-D> :%s/></>\r</g<CR>=gg
 
