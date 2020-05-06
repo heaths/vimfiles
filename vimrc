@@ -65,4 +65,15 @@ let g:EditorConfig_exclude_patterns=['fugitive://.\*']
 " command mappings
 nmap <C-E><C-D> :%s/></>\r</g<CR>=gg
 
+" use powerline if available
+if has('python3')
+  python3 << EOF
+from os import path
+import site
+d = path.join(site.getusersitepackages(), 'powerline/bindings/vim')
+if path.isdir(d):
+  vim.command('set rtp+={} laststatus=2 t_Co=256'.format(d))
+EOF
+endif
+
 " vim:et:sts=2:sw=2:ts=8:ft=vim:
