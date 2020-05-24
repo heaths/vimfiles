@@ -70,7 +70,9 @@ if has('python3') || has('python3/dyn')
   python3 << EOF
 from os import path
 import site
-for p in site.getsitepackages():
+
+paths = [site.getusersitepackages()] + site.getsitepackages()
+for p in paths:
   p = path.join(p, 'powerline', 'bindings', 'vim')
   if path.isdir(p):
     vim.command('set rtp+={} laststatus=2 t_Co=256'.format(p))
