@@ -66,13 +66,14 @@ let g:EditorConfig_exclude_patterns=['fugitive://.\*']
 nmap <C-E><C-D> :%s/></>\r</g<CR>=gg
 
 " use powerline if available
-if has('python3')
+if has('python3') || has('python3/dyn')
   python3 << EOF
 from os import path
 import site
-d = path.join(site.getusersitepackages(), 'powerline/bindings/vim')
-if path.isdir(d):
-  vim.command('set rtp+={} laststatus=2 t_Co=256'.format(d))
+for p in site.getsitepackages():
+  p = path.join(p, 'powerline', 'bindings', 'vim')
+  if path.isdir(p):
+    vim.command('set rtp+={} laststatus=2 t_Co=256'.format(p))
 EOF
 endif
 
