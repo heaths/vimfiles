@@ -48,6 +48,9 @@ aug vimrc
 
   " do not expand tabs for Windows Installer archive files
   au BufNewFile,BufRead *.idt set noexpandtab
+
+  " use tabs for golang
+  au BufNewFile,BufRead *.go set noexpandtab shiftwidth=8 softtabstop=0
 aug END
 
 " get cache for local profile
