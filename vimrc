@@ -65,6 +65,9 @@ let g:ps1_nofold_blocks=1
 " set defaults for editorconfig
 let g:EditorConfig_exclude_patterns=['fugitive://.\*']
 
+" set defaults for rust.vim
+let g:rustfmt_autosave = 1
+
 " command mappings
 nmap <C-E><C-D> :%s/></>\r</g<CR>=gg
 
