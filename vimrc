@@ -71,7 +71,8 @@ let g:rustfmt_autosave = 1
 " command mappings
 nmap <C-E><C-D> :%s/></>\r</g<CR>=gg
 
-" use powerline if available
+" use powerline if available; install with:
+" pip install git+https://github.com/powerline/powerline.git@develop
 if has('python3') || has('python3/dyn')
   python3 << EOF
 from os import path
