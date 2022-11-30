@@ -18,5 +18,5 @@ hi Error ctermbg=9 guibg=#ff0000
 hi Todo ctermfg=4 ctermbg=3 guifg=#000080 guibg=#c0c000
 hi Directory ctermfg=2 guifg=#00c000
 hi StatusLine ctermfg=11 ctermbg=12 cterm=none guifg=#ffff00 guibg=#0000ff gui=none
-hi Normal guifg=#ffffff guibg=#000000
+hi Normal ctermfg=15 ctermbg=NONE guifg=#ffffff guibg=NONE
 hi Search ctermbg=3 guibg=#c0c000

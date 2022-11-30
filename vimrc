@@ -3,6 +3,11 @@ set nocompatible
 set hlsearch
 set showcmd
 set number
+
+" force gui colors in Windows virtual terminal
+if has('vcon')
+  set termguicolors
+endif
 colo custom
 
 " indent and tab options
