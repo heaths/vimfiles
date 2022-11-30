@@ -3,6 +3,7 @@ set nocompatible
 set hlsearch
 set showcmd
 set number
+set cursorline
 
 if has('vcon')
   " force gui colors in Windows virtual terminal

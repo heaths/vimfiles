@@ -41,8 +41,8 @@ hi Conditional ctermfg=13 guifg=#c586c0 cterm=NONE gui=NONE
 hi Constant ctermfg=4 guifg=#569cd6 cterm=NONE gui=NONE
 hi Control ctermfg=13 guifg=#c586c0 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi Cursor ctermbg=2 guibg=#608b4e cterm=NONE gui=NONE
-hi CursorLine ctermbg=0 guibg=#1e1e1e cterm=NONE gui=NONE
-hi CursorLineNr ctermfg=2 guifg=#608b4e ctermbg=0 guibg=#1e1e1e cterm=NONE gui=NONE
+hi CursorLine cterm=NONE gui=NONE
+hi CursorLineNr ctermfg=2 guifg=#608b4e ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi Debug ctermfg=4 guifg=#007acc cterm=NONE gui=NONE
 hi Define ctermfg=13 guifg=#c586c0 cterm=NONE gui=NONE
 hi Delimiter ctermfg=0 guifg=#505050 cterm=NONE gui=NONE
@@ -68,7 +68,7 @@ hi Include ctermfg=13 guifg=#c586c0 cterm=NONE gui=NONE
 hi Keyword ctermfg=4 guifg=#569cd6 cterm=NONE gui=NONE
 hi Label ctermfg=13 guifg=#c586c0 cterm=NONE gui=NONE
 hi Language ctermfg=4 guifg=#569cd6 cterm=italic gui=italic
-hi LineNr ctermfg=0 guifg=#505050 ctermbg=0 guibg=#1e1e1e cterm=NONE gui=NONE
+hi LineNr ctermfg=0 guifg=#505050 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi MatchParen ctermbg=4 guibg=#264f78 cterm=NONE gui=NONE
 hi ModeMsg ctermfg=7 guifg=#808080 cterm=NONE gui=NONE
 hi MoreMsg ctermfg=7 guifg=#d4d4d4 cterm=NONE gui=NONE
