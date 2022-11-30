@@ -52,7 +52,7 @@ hi DiffDelete ctermbg=1 guibg=#d16969 cterm=NONE gui=NONE
 hi DiffText ctermbg=7 guibg=#d4d4d4 cterm=NONE gui=NONE
 hi Directory ctermfg=4 guifg=#569cd6 cterm=NONE gui=NONE
 hi DocString ctermfg=2 guifg=#608b4e cterm=italic gui=italic
-hi EndOfBuffer ctermfg=0 guifg=#505050 ctermbg=0 guibg=#1e1e1e cterm=NONE gui=NONE
+hi EndOfBuffer ctermfg=0 guifg=#505050 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi Error ctermfg=1 guifg=#d16969 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi ErrorMsg ctermfg=1 guifg=#d16969 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi Escape ctermfg=3 guifg=#d7ba7d cterm=italic gui=italic
