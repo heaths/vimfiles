@@ -4,11 +4,24 @@ set hlsearch
 set showcmd
 set number
 
-" force gui colors in Windows virtual terminal
 if has('vcon')
+  " force gui colors in Windows virtual terminal
   set termguicolors
+
+  " modernize termcaps
+  let &t_RV = "\<Esc>[>c"
+  let &t_ti = "\<Esc>[?1049h"
+  let &t_te = "\<Esc>[?1049l"
 endif
 colo custom
+
+if &term =~ 'xterm' || has('vcon')
+  let &t_SI = "\<Esc>[5 q" " insert mode: blink bar
+  let &t_SR = "\<Esc>[3 q" " replace mode: blink underline
+  let &t_EI = "\<Esc>[1 q" " end: blink block
+  let &t_ti ..= "\<Esc>[1 q" " enter: blink block
+  let &t_te = "\<Esc>[0 q"..&t_te " exit: default
+endif
 
 " indent and tab options
 set autoindent
