@@ -13,7 +13,7 @@ if has('vcon')
   let &t_ti = "\<Esc>[?1049h"
   let &t_te = "\<Esc>[?1049l"
 endif
-colo custom
+colo vscode
 
 if &term =~ 'xterm' || has('vcon')
   let &t_SI = "\<Esc>[5 q" " insert mode: blink bar
