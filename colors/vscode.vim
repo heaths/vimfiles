@@ -41,7 +41,7 @@ hi Conditional ctermfg=13 guifg=#c586c0 cterm=NONE gui=NONE
 hi Constant ctermfg=4 guifg=#569cd6 cterm=NONE gui=NONE
 hi Control ctermfg=13 guifg=#c586c0 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi Cursor ctermbg=2 guibg=#608b4e cterm=NONE gui=NONE
-hi CursorLine cterm=NONE gui=NONE
+hi CursorLine ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi CursorLineNr ctermfg=2 guifg=#608b4e ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi Debug ctermfg=4 guifg=#007acc cterm=NONE gui=NONE
 hi Define ctermfg=13 guifg=#c586c0 cterm=NONE gui=NONE
