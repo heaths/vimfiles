@@ -7,16 +7,19 @@ if exists("syntax_on")
 endif
 let g:colors_name = "custom"
 
-hi Comment ctermfg=8 guifg=#808080
-hi Constant ctermfg=14 cterm=none guifg=#00ffff gui=none
-hi Identifier ctermfg=6 guifg=#00c0c0
-hi Statement ctermfg=3 cterm=bold guifg=#c0c000 gui=bold
-hi PreProc ctermfg=10 guifg=#00ff00
-hi Type ctermfg=2 guifg=#00c000
-hi Special ctermfg=12 guifg=#0000ff
-hi Error ctermbg=9 guibg=#ff0000
-hi Todo ctermfg=4 ctermbg=3 guifg=#000080 guibg=#c0c000
-hi Directory ctermfg=2 guifg=#00c000
-hi StatusLine ctermfg=11 ctermbg=12 cterm=none guifg=#ffff00 guibg=#0000ff gui=none
-hi Normal ctermfg=15 ctermbg=NONE guifg=#ffffff guibg=NONE
-hi Search ctermbg=3 guibg=#c0c000
+hi Comment ctermfg=DarkGray guifg=#808080
+hi Constant ctermfg=Yellow cterm=none guifg=#00ffff gui=none
+hi Delimiter ctermfg=DarkBlue guifg=#8080ff
+hi Directory ctermfg=DarkGreen guifg=#00c000
+hi Error ctermbg=Red guibg=#ff0000
+hi Identifier ctermfg=DarkYellow guifg=#00c0c0
+hi LineNr ctermfg=DarkBlue guifg=#8080ff
+hi NonText ctermfg=DarkBlue guifg=#8080ff
+hi Normal ctermfg=White ctermbg=NONE guifg=#ffffff guibg=NONE
+hi PreProc ctermfg=Green guifg=#00ff00
+hi Search ctermbg=DarkCyan guibg=#c0c000
+hi Special ctermfg=DarkBlue guifg=#8080ff
+hi Statement ctermfg=DarkCyan cterm=bold guifg=#c0c000 gui=bold
+hi StatusLine ctermfg=Cyan ctermbg=Red cterm=none guifg=#ffff00 guibg=#0000ff gui=none
+hi Todo ctermfg=DarkRed ctermbg=DarkCyan guifg=#000080 guibg=#c0c000
+hi Type ctermfg=DarkGreen guifg=#00c000
