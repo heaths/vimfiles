@@ -32,6 +32,12 @@ hi White ctermfg=7 guifg=#d4d4d4 cterm=NONE gui=NONE
 hi Yellow ctermfg=3 guifg=#dcdcaa cterm=NONE gui=NONE
 hi YellowOrange ctermfg=3 guifg=#d7ba7d cterm=NONE gui=NONE
 
+if g:vscode_transparent == 1 && !has('gui')
+    hi Normal ctermfg=7 guifg=#d4d4d4 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
+else
+    hi Normal ctermfg=7 guifg=#d4d4d4 ctermbg=0 guibg=#1e1e1e cterm=NONE gui=NONE
+endif
+
 hi Boolean ctermfg=4 guifg=#569cd6 cterm=NONE gui=NONE
 hi Character ctermfg=3 guifg=#d7ba7d cterm=NONE gui=NONE
 hi ColorColumn ctermbg=0 guibg=#303030 cterm=NONE gui=NONE
@@ -46,10 +52,10 @@ hi CursorLineNr ctermfg=2 guifg=#608b4e ctermbg=NONE guibg=NONE cterm=NONE gui=N
 hi Debug ctermfg=4 guifg=#007acc cterm=NONE gui=NONE
 hi Define ctermfg=13 guifg=#c586c0 cterm=NONE gui=NONE
 hi Delimiter ctermfg=0 guifg=#505050 cterm=NONE gui=NONE
-hi DiffAdd ctermbg=2 guibg=#608b4e cterm=NONE gui=NONE
-hi DiffChange ctermbg=3 guibg=#dcdcaa cterm=NONE gui=NONE
-hi DiffDelete ctermbg=1 guibg=#d16969 cterm=NONE gui=NONE
-hi DiffText ctermbg=7 guibg=#d4d4d4 cterm=NONE gui=NONE
+hi DiffAdd ctermbg=2 guibg=#373d29 cterm=NONE gui=NONE
+hi DiffChange ctermbg=3 guibg=#373d29 cterm=NONE gui=NONE
+hi DiffDelete ctermbg=1 guibg=#4b1818 guifg=NONE cterm=NONE gui=NONE
+hi DiffText ctermbg=7 guibg=#4b592b cterm=NONE gui=NONE
 hi Directory ctermfg=4 guifg=#569cd6 cterm=NONE gui=NONE
 hi DocString ctermfg=2 guifg=#608b4e cterm=italic gui=italic
 hi EndOfBuffer ctermfg=0 guifg=#505050 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
@@ -73,11 +79,6 @@ hi MatchParen ctermbg=4 guibg=#264f78 cterm=NONE gui=NONE
 hi ModeMsg ctermfg=7 guifg=#808080 cterm=NONE gui=NONE
 hi MoreMsg ctermfg=7 guifg=#d4d4d4 cterm=NONE gui=NONE
 hi NonText ctermfg=7 guifg=#808080 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
-if g:vscode_transparent == 1 && !has('gui')
-    hi Normal ctermfg=7 guifg=#d4d4d4 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
-else
-    hi Normal ctermfg=7 guifg=#d4d4d4 ctermbg=0 guibg=#1e1e1e cterm=NONE gui=NONE
-endif
 hi NormalNC ctermbg=0 guibg=#1e1e1e cterm=NONE gui=NONE
 hi Number ctermfg=9 guifg=#b5cea8 cterm=NONE gui=NONE
 hi Number ctermfg=9 guifg=#b5cea8 cterm=NONE gui=NONE
