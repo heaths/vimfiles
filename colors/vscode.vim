@@ -141,3 +141,8 @@ hi qfFileName ctermfg=4 guifg=#569cd6 ctermbg=NONE guibg=NONE cterm=NONE gui=NON
 hi qfLineNr ctermfg=9 guifg=#b5cea8 ctermbg=NONE guibg=NONE cterm=NONE gui=NONE
 hi rCursor ctermbg=1 guibg=#d16969 cterm=NONE gui=NONE
 hi vCursor ctermbg=13 guibg=#c586c0 cterm=NONE gui=NONE
+
+hi link jsonKeyword Keyword
+
+hi link xmlTag Structure
+hi link xmlTagName Structure
