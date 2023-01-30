@@ -6,6 +6,7 @@ set number
 set cursorline
 
 if &term =~ 'xterm' || has('vcon')
+  set mouse=nvi
   set termguicolors
 
   " modernize termcaps

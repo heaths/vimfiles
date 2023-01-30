@@ -126,7 +126,7 @@ hi User2 ctermfg=7 guifg=#d4d4d4 ctermbg=0 guibg=#505050 cterm=NONE gui=NONE
 hi User3 ctermfg=2 guifg=#608b4e ctermbg=0 guibg=#303030 cterm=NONE gui=NONE
 hi Var ctermfg=6 guifg=#9cdcfe cterm=NONE gui=NONE
 hi VertSplit ctermfg=0 guifg=#1e1e1e ctermbg=0 guibg=#303030 cterm=NONE gui=NONE
-hi Visual ctermbg=0 guibg=#1e1e1e cterm=reverse gui=reverse
+hi Visual ctermbg=7 guibg=#d4d4d4 ctermfg=0 guifg=#1e1e1e cterm=NONE gui=NONE
 hi VisualNOS ctermfg=NONE guifg=NONE ctermbg=4 guibg=#264f78 cterm=NONE gui=NONE
 hi WarningMsg ctermfg=3 guifg=#ce9178 cterm=NONE gui=NONE
 hi WildMenu ctermfg=7 guifg=#d4d4d4 ctermbg=4 guibg=#264f78 cterm=NONE gui=NONE
