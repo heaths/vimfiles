@@ -20,6 +20,11 @@ if &term =~ 'xterm' || has('vcon')
   let &t_ti ..= "\<Esc>[1 q" " enter: blink block
   let &t_te = "\<Esc>[0 q"..&t_te " exit: default
 endif
+
+" force gui colors in Windows virtual terminal
+if has('vcon')
+  set termguicolors
+endif
 colo vscode
 
 " indent and tab options
@@ -88,19 +93,10 @@ let g:rustfmt_autosave = 1
 " command mappings
 nmap <C-E><C-D> :%s/></>\r</g<CR>=gg
 
-" use powerline if available; install with:
-" pip install git+https://github.com/powerline/powerline.git@develop
-if has('python3') || has('python3/dyn')
-  python3 << EOF
-from os import path
-import site
-
-paths = [site.getusersitepackages()] + site.getsitepackages()
-for p in paths:
-  p = path.join(p, 'powerline', 'bindings', 'vim')
-  if path.isdir(p):
-    vim.command('set rtp+={} laststatus=2 t_Co=256'.format(p))
-EOF
-endif
+" configure vim-airline
+let g:airline_extensions = ["branch","fugitiveline","keymap","netrw","quickfix","searchcount","term","whitespace","wordcount"]
+let g:airline_powerline_fonts = 1
+let g:airline_skip_empty_sections = 1
+let g:airline_theme = 'dark'
 
 " vim:et:sts=2:sw=2:ts=8:ft=vim:
