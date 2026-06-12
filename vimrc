@@ -94,9 +94,12 @@ let g:rustfmt_autosave = 1
 nmap <C-E><C-D> :%s/></>\r</g<CR>=gg
 
 " configure vim-airline
-let g:airline_extensions = ["branch","fugitiveline","netrw","quickfix","searchcount","term","whitespace","wordcount"]
+let g:airline_extensions = ["branch","fugitiveline","quickfix","searchcount","term","whitespace","wordcount"]
 if has('keymap')
     let g:airline_extensions += ["keymap"]
+endif
+if has('netrw')
+    let g:airline_extensions += ["netrw"]
 endif
 
 let g:airline_powerline_fonts = 1
